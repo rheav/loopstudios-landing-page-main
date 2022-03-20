@@ -1,0 +1,123 @@
+body,
+html {
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: space-between;
+  max-height: 100px;
+  padding: 3.5rem 0.5em;
+  margin-block-end: 3rem;
+}
+
+nav li {
+  display: inline;
+  line-height: 1;
+}
+
+nav li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s all ease-in-out;
+  font-weight: bold;
+  margin: auto 1rem;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+
+nav li a::before {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 1.5px;
+  bottom: -0.7rem;
+  left: 50%;
+  margin-left: -25%;
+  background-color: hsl(0, 0%, 100%);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav li a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+section {
+  padding: 1rem 10rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col-70 {
+  flex: 70%;
+}
+
+.col-30 {
+  flex: 30%;
+}
+
+.vert-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.header-img {
+}
+
+.nav-list {
+  position: relative;
+  top: -10px;
+}
+
+.sec1-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/desktop/image-hero.jpg);
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-box {
+  border: 1px solid hsl(0, 0%, 100%);
+  padding: 0rem 3rem 0rem 2rem;
+  width: 100%;
+}
+
+.hero-box h1 {
+  font-weight: 100;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  margin: 1.5rem auto;
+}
